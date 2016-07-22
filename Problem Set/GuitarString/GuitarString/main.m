@@ -11,13 +11,19 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        GuitarString *string = [[GuitarString alloc] init];
+        NSError *error = nil;
+        [string pluck:10.4 error:&error];
         
-        // a. Create an instance of the class GuitarString
-        // b. Create an NSError
-        // c. Call the method pluck(velocity: Float)
-        // d. Check if an error was returned
-        // e. Log an error if one was returned
-
+        if (error != nil) {
+            if (error.code == 876) {
+                NSLog(@"Your string is broken");
+            } else if (error.code == 543) {
+                NSLog(@"Your string is out of tune");
+            } else {
+                NSLog(@"I don't know why your string doesn't sound");
+            }
+        }
     }
     return 0;
 }
