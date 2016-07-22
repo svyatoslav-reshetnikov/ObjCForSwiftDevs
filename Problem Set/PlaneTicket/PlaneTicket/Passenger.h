@@ -13,6 +13,6 @@
 @property (nonatomic, copy, nullable) NSString *name;
 @property (nonatomic, readonly, nullable) NSDate *birthday;
 
--(nullable instancetype)initWithName:(nullable NSString*)name;
+-(nonnull instancetype)initWithName:(nullable NSString*)name;
 
 @end

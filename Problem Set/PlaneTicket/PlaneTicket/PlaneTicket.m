@@ -10,7 +10,7 @@
 
 @implementation PlaneTicket
 
--(instancetype)initWithDestination:(NSString*)destination
+-(nonnull instancetype)initWithDestination:(NSString*)destination
                      departureCity:(NSString*)departureCity
                          passenger:(Passenger*)person
                               date:(NSDate*)departureDate {

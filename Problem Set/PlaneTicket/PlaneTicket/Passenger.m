@@ -16,7 +16,7 @@
 
 @implementation Passenger
 
--(instancetype)initWithName:(NSString*)name {
+-(nonnull instancetype)initWithName:(nullable NSString*)name {
     self = [super init];
     if(self) {
         _name = [name copy];

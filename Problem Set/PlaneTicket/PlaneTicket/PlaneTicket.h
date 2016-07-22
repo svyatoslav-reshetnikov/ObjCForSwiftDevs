@@ -17,7 +17,7 @@
 @property (nonatomic, copy, nullable) NSString *seatAssignment;
 @property (nonatomic, nullable) Passenger *passenger;
 
--(nullable instancetype)initWithDestination:(nullable NSString*)destination
+-(nonnull instancetype)initWithDestination:(nullable NSString*)destination
                      departureCity:(nullable NSString*)departureCity
                          passenger:(nullable Passenger*)person
                               date:(nullable NSDate*)departureDate;
