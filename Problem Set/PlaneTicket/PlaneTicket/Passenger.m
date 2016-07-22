@@ -10,13 +10,13 @@
 
 @interface Passenger()
 
-@property (nonatomic, readwrite, nullable) NSDate *birthday;
+@property (nonatomic, readwrite) NSDate * _Nonnull birthday;
 
 @end
 
 @implementation Passenger
 
--(nonnull instancetype)initWithName:(nullable NSString*)name {
+-(instancetype _Nullable)initWithName:(NSString * _Nonnull)name {
     self = [super init];
     if(self) {
         _name = [name copy];

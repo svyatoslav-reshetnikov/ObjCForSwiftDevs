@@ -18,7 +18,7 @@ typedef NS_ENUM(NSInteger, ShirtSize) {
 
 @interface Sweatshirt : NSObject
 
-@property (nonatomic) BOOL hasHood;
+@property (nonatomic, nonnull) BOOL hasHood;
 @property (nonatomic) BOOL clean;
 @property (nonatomic) ShirtSize size;
 @property (nonatomic) NSUInteger softness;
