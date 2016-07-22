@@ -26,16 +26,16 @@ let cityAnimal = myApartment.animals![randomNumber]
 
 if farmAnimal is Rat {
     farmAnimal.scurry()
-} else {
-    print("No scurry :-(")
+} else if farmAnimal is GoldenDoodle {
+    farmAnimal.romp()
+} else if farmAnimal is Pig {
+    farmAnimal.wallow()
 }
 
-if cityAnimal is Pigeon {
+if cityAnimal is Rat {
+    cityAnimal.scurry()
+} else if cityAnimal is GoldenDoodle {
+    cityAnimal.romp()
+} else if cityAnimal is Pigeon {
     cityAnimal.deliverMessage()
-} else {
-    print("I can't see iOS developers army over the hill.")
 }
-
-
-
-
