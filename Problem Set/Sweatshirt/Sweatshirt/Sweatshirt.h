@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, ShirtSize) {
 @property (nonatomic) NSUInteger softness;
 
 
--(instancetype)initWithSize:(ShirtSize)size
+-(nullable instancetype)initWithSize:(ShirtSize)size
                     hasHood:(BOOL)hoody;
 
 @end

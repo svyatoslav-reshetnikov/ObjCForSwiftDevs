@@ -11,7 +11,7 @@
 @implementation Sweatshirt
 
 
--(instancetype)initWithSize:(ShirtSize)size
+-(nullable instancetype)initWithSize:(ShirtSize)size
                     hasHood: (BOOL)hoody {
     
     self = [super init];
