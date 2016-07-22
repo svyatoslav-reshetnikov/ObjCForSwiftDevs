@@ -9,7 +9,7 @@
 import Foundation
 
 // Errors thrown by Regift
-@objc public enum RegiftError: Int, ErrorType {
+@objc public enum RegiftError: NSInteger, ErrorType {
     case DestinationNotFound
     case AddFrameToDestination
     case DestinationFinalize
