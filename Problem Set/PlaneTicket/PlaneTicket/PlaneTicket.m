@@ -10,10 +10,10 @@
 
 @implementation PlaneTicket
 
--(nullable instancetype)initWithDestination:(nullable NSString*)destination
-                     departureCity:(nullable NSString*)departureCity
-                         passenger:(nullable Passenger*)person
-                              date:(nullable NSDate*)departureDate {
+-(instancetype)initWithDestination:(NSString*)destination
+                     departureCity:(NSString*)departureCity
+                         passenger:(Passenger*)person
+                              date:(NSDate*)departureDate {
  
     self = [super init];
     if(self) {
