@@ -11,8 +11,8 @@
 
 @interface WashingMachine : NSObject
 
-@property (nonatomic, nullable) NSArray *clothes;
+@property (nonatomic) NSArray * _Nonnull clothes;
 
--(nullable Sweatshirt*)wash:(nullable Sweatshirt*)sweatshirt;
+-(Sweatshirt * _Nullable)wash:(Sweatshirt * _Nullable)sweatshirt;
 
 @end

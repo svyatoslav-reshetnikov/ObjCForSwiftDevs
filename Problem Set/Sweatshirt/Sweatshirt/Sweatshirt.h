@@ -18,13 +18,13 @@ typedef NS_ENUM(NSInteger, ShirtSize) {
 
 @interface Sweatshirt : NSObject
 
-@property (nonatomic, nonnull) BOOL hasHood;
+@property (nonatomic) BOOL hasHood;
 @property (nonatomic) BOOL clean;
 @property (nonatomic) ShirtSize size;
 @property (nonatomic) NSUInteger softness;
 
 
--(nullable instancetype)initWithSize:(ShirtSize)size
+-(instancetype _Nullable)initWithSize:(ShirtSize)size
                     hasHood:(BOOL)hoody;
 
 @end
