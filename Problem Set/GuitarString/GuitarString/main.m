@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
         NSError *error = nil;
         [string pluck:10.4 error:&error];
         
-        if (error != nil) {
+        if (error) {
             if (error.code == 876) {
                 NSLog(@"Your string is broken");
             } else if (error.code == 543) {
