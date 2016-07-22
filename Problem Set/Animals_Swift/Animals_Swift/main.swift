@@ -23,8 +23,18 @@ let myApartment = Apartment(animals:[sinatra, cary, snoopy])
 let randomNumber = Int(arc4random_uniform(3))
 let farmAnimal = myFarm.animals![randomNumber]
 let cityAnimal = myApartment.animals![randomNumber]
-farmAnimal.scurry()
-cityAnimal.deliverMessage()
+
+if farmAnimal is Rat {
+    farmAnimal.scurry()
+} else {
+    print("No scurry :-(")
+}
+
+if cityAnimal is Pigeon {
+    cityAnimal.deliverMessage()
+} else {
+    print("I can't see iOS developers army over the hill.")
+}
 
 
 
