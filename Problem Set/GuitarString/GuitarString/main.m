@@ -16,9 +16,10 @@ int main(int argc, const char * argv[]) {
         [string pluck:10.4 error:&error];
         
         if (error) {
-            if (error.code == 876) {
+            NSLog(@"%ld", (long)error.code);
+            if (error.code == 0) {
                 NSLog(@"Your string is broken");
-            } else if (error.code == 543) {
+            } else if (error.code == 1) {
                 NSLog(@"Your string is out of tune");
             } else {
                 NSLog(@"I don't know why your string doesn't sound");

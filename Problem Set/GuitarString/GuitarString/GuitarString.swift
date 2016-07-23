@@ -10,8 +10,8 @@ import Cocoa
 
 
 @objc enum GuitarStringError: NSInteger, ErrorType {
-    case Broken = 876
-    case OutOfTune = 543
+    case Broken
+    case OutOfTune
 }
 
 class GuitarString: NSObject {
